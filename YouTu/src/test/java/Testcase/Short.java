@@ -13,10 +13,11 @@ public class Short extends LibGlobal {
 		PageFactory.initElements(driver, Shortpath.class);
 	}
 	
-	@Test(priority = 1)
+	@Test
 	public void video()
 	{
 		Shortpath.getSho().click();
+		log.info("short is clicked");
 	}
 
 }

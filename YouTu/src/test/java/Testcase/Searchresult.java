@@ -8,7 +8,7 @@ import Common.LibGlobal;
 import Pageobject.Gametrac;
 
 public class Searchresult extends LibGlobal {
-	
+
 	public Searchresult()
 	{
 		PageFactory.initElements(driver , Gametrac.class);
@@ -18,15 +18,18 @@ public class Searchresult extends LibGlobal {
 	public void launch()
 	{
 		browser();
+		log.info("launched browser");
 		openurl("https://www.youtube.com/");
+		log.info("launched URL");
 	}
 
 
-	@Test(priority = 0)
+	@Test
 	public void result()
 	{
 		Gametrac.getSearch().sendKeys("gametract");	
 		Gametrac.getSub().click();
+		log.info("gone to page");
 	}
 
 	

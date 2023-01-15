@@ -1,27 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-01-14T19:03:16 IST" name="Suite" finished-at="2023-01-14T19:03:17 IST" duration-ms="949">
+  <suite started-at="2023-01-15T19:07:21 IST" name="Search" finished-at="2023-01-15T19:07:23 IST" duration-ms="1557">
     <groups>
     </groups>
-    <test started-at="2023-01-14T19:03:16 IST" name="Test" finished-at="2023-01-14T19:03:17 IST" duration-ms="949">
+    <test started-at="2023-01-15T19:07:21 IST" name="Test" finished-at="2023-01-15T19:07:23 IST" duration-ms="1557">
       <class name="Testcase.Short">
-        <test-method signature="video()[pri:1, instance:Testcase.Short@2b8bb184]" started-at="2023-01-14T19:03:16 IST" name="video" finished-at="2023-01-14T19:03:17 IST" duration-ms="205" status="PASS">
+        <test-method signature="video()[pri:0, instance:Testcase.Short@597f48df]" started-at="2023-01-15T19:07:22 IST" name="video" finished-at="2023-01-15T19:07:23 IST" duration-ms="316" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- video -->
       </class> <!-- Testcase.Short -->
       <class name="Testcase.Searchresult">
-        <test-method is-config="true" signature="launch()[pri:0, instance:Testcase.Searchresult@44bd4b0a]" started-at="2023-01-14T19:03:13 IST" name="launch" finished-at="2023-01-14T19:03:16 IST" duration-ms="2773" status="PASS">
+        <test-method is-config="true" signature="launch()[pri:0, instance:Testcase.Searchresult@29a69a35]" started-at="2023-01-15T19:07:18 IST" name="launch" finished-at="2023-01-15T19:07:21 IST" duration-ms="3785" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launch -->
-        <test-method signature="result()[pri:0, instance:Testcase.Searchresult@44bd4b0a]" started-at="2023-01-14T19:03:16 IST" name="result" finished-at="2023-01-14T19:03:16 IST" duration-ms="649" status="PASS">
+        <test-method signature="result()[pri:0, instance:Testcase.Searchresult@29a69a35]" started-at="2023-01-15T19:07:22 IST" name="result" finished-at="2023-01-15T19:07:22 IST" duration-ms="730" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- result -->
       </class> <!-- Testcase.Searchresult -->
+      <class name="Testcase.Subscription">
+        <test-method signature="subs()[pri:0, instance:Testcase.Subscription@58a4a74d]" started-at="2023-01-15T19:07:23 IST" name="subs" finished-at="2023-01-15T19:07:23 IST" duration-ms="164" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- subs -->
+      </class> <!-- Testcase.Subscription -->
+      <class name="Testcase.His">
+        <test-method signature="history()[pri:0, instance:Testcase.His@2ff95fc6]" started-at="2023-01-15T19:07:23 IST" name="history" finished-at="2023-01-15T19:07:23 IST" duration-ms="229" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- history -->
+      </class> <!-- Testcase.His -->
     </test> <!-- Test -->
-  </suite> <!-- Suite -->
+  </suite> <!-- Search -->
 </testng-results>

@@ -8,6 +8,12 @@ import java.io.IOException;
 import java.time.Duration;
 
 import org.apache.commons.io.FileUtils;
+import org.apache.log4j.Logger;
+import org.apache.log4j.PropertyConfigurator;
+import org.apache.log4j.xml.DOMConfigurator;
+import org.apache.logging.log4j.core.config.Property;
+import org.apache.logging.log4j.core.config.properties.PropertiesConfiguration;
+import org.apache.logging.log4j.core.config.properties.PropertiesConfigurationFactory;
 import org.openqa.selenium.By;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
@@ -22,7 +28,7 @@ public class LibGlobal {
 	
 	public static WebDriver driver = 	new ChromeDriver(); ;
 	WebElement element;
-	
+	public static Logger log = Logger.getLogger(LibGlobal.class);
 	public  void browser()
 	{
 	
@@ -77,10 +83,24 @@ public class LibGlobal {
 		Actions ac = new Actions(driver);
 		ac.moveToElement(element).contextClick().perform();
 	}
+	
+	public void Visiblity (WebElement element)
+	{
+		WebDriverWait w = new WebDriverWait(driver, Duration.ofSeconds(20));
+		w.until(ExpectedConditions.visibilityOf(element));
+		
+	}
+	public void log()
+	{
+		String log4jpath = "/YouTu/log4j.properties";
+		PropertyConfigurator.configure(log4jpath);
+	}
 	public void quit()
 	{
 		driver.quit();
 	}
+	
+	
 
 
 }
